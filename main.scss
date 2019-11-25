@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #b75d69;
+$secondary-color: #774c60;
+$dark-color: #372549;
+$darker-color: #1a1423;
+$light-color: #eacdc2;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color;
+    transition: .3s ease-in;
+  }
+}
+
+
+//--------Navbar------------
+header {
+  background: $dark-color;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    li {
+      list-style-type: none;
+
+      a {
+        display: block;
+        padding: 1rem;
+        text-transform: uppercase;
+        color: $light-color;
+        font-size: 1.5rem;
+
+        @media only screen and (max-width: 500px){
+          font-size: 1.3rem;
+        }
+
+        &:hover {
+          border-bottom: 1px solid $primary-color; 
+        }
+      }
+    }
+  }
+}
+
+//-------------About----------
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: $primary-color;
+  color: $darker-color;  
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: 'Kalam', cursive;
+
+    @media only screen and (max-width: 500px){
+      font-size: 4.5rem;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    
+    @media only screen and (max-width: 500px){
+      font-size: 1.6rem;
+    }
+  }
+}
+
+//-------------Projects------------
+#projects {
+  padding: 4rem 0;
+  background: $darker-color;
+  color: $light-color;
+ 
+  h2 {
+    padding: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+  }
+  
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1rem; 
+    margin: 0 2rem;
+
+    .project-tile {
+      border: 1px solid $secondary-color;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  
+      a {
+        color: $light-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+    
+        h3 {
+          text-align: center;
+          padding-bottom: 1rem;
+        }
+      }
+
+      img {
+        height: 200px;
+        width: auto;
+        max-width: 100%;       
+      }
+    }
+  }
+}
+
+//--------Contact---------
+#contact {
+  height: 50vh;
+  background: $secondary-color;
+  color: $light-color;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+  }
+
+  .contact-wrapper {  
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    a {
+      color: $light-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+    ion-icon {
+      font-size: 2rem;
+      padding: 0 .6rem;
+      } 
+    }    
+  }
+}
+
+//-------Footer-----------
+footer {
+  background: $dark-color;
+  color: $light-color;
+  padding: 2rem 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $light-color; 
+  }  
+}
+
+

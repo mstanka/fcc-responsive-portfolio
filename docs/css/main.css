@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #b75d69;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+header {
+  background: #372549;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #eacdc2;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  header ul li a {
+    font-size: 1.3rem;
+  }
+}
+
+header ul li a:hover {
+  border-bottom: 1px solid #b75d69;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #b75d69;
+  color: #1a1423;
+}
+
+#welcome-section h1 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-family: 'Kalam', cursive;
+}
+
+@media only screen and (max-width: 500px) {
+  #welcome-section h1 {
+    font-size: 4.5rem;
+  }
+}
+
+#welcome-section p {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #welcome-section p {
+    font-size: 1.6rem;
+  }
+}
+
+#projects {
+  padding: 4rem 0;
+  background: #1a1423;
+  color: #eacdc2;
+}
+
+#projects h2 {
+  padding: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+}
+
+#projects .projects-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+#projects .projects-wrapper .project-tile {
+  border: 1px solid #774c60;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .projects-wrapper .project-tile a {
+  color: #eacdc2;
+}
+
+#projects .projects-wrapper .project-tile a:hover {
+  color: #b75d69;
+}
+
+#projects .projects-wrapper .project-tile a h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#projects .projects-wrapper .project-tile img {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+}
+
+#contact {
+  height: 50vh;
+  background: #774c60;
+  color: #eacdc2;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+}
+
+#contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+#contact .contact-wrapper a {
+  color: #eacdc2;
+}
+
+#contact .contact-wrapper a:hover {
+  color: #b75d69;
+}
+
+#contact .contact-wrapper a ion-icon {
+  font-size: 2rem;
+  padding: 0 .6rem;
+}
+
+footer {
+  background: #372549;
+  color: #eacdc2;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eacdc2;
+}
+/*# sourceMappingURL=main.css.map */

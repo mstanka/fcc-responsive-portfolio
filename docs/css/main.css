@@ -5,8 +5,9 @@
           box-sizing: border-box;
 }
 
-body {
+html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -76,7 +77,16 @@ header ul li a:hover {
           justify-content: center;
   text-align: center;
   background: #b75d69;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b75d69), to(#774c60));
+  background: linear-gradient(#b75d69 0%, #774c60 100%);
   color: #1a1423;
+}
+
+#welcome-section img {
+  height: 150px;
+  border-radius: 50%;
+  padding: .1rem;
+  border: 1px solid #774c60;
 }
 
 #welcome-section h1 {
@@ -163,6 +173,8 @@ header ul li a:hover {
 #contact {
   height: 50vh;
   background: #774c60;
+  background: -webkit-gradient(linear, left top, left bottom, from(#774c60), to(#372549));
+  background: linear-gradient(#774c60 0%, #372549 100%);
   color: #eacdc2;
   text-align: center;
   display: -webkit-box;
@@ -206,7 +218,7 @@ header ul li a:hover {
 }
 
 footer {
-  background: #372549;
+  background: #1a1423;
   color: #eacdc2;
   padding: 2rem 0;
   text-align: center;

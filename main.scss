@@ -11,8 +11,9 @@ $darker-color: #1a1423;
 $light-color: #eacdc2;
 
 
-body {
+html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -70,7 +71,15 @@ header {
   justify-content: center;
   text-align: center;
   background: $primary-color;
+  background: linear-gradient($primary-color 0%, $secondary-color 100%);
   color: $darker-color;  
+
+  img {
+    height: 150px;
+    border-radius: 50%;
+    padding: .1rem;
+    border: 1px solid $secondary-color;
+  }
 
   h1 {
     text-transform: uppercase;
@@ -144,6 +153,7 @@ header {
 #contact {
   height: 50vh;
   background: $secondary-color;
+  background: linear-gradient($secondary-color 0%, $dark-color 100%);
   color: $light-color;
   text-align: center;
   display: flex;
@@ -177,7 +187,7 @@ header {
 
 //-------Footer-----------
 footer {
-  background: $dark-color;
+  background: $darker-color;
   color: $light-color;
   padding: 2rem 0;
   text-align: center;
